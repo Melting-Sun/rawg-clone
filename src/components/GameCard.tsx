@@ -9,12 +9,13 @@ interface Props {
 export default function GameCard({ game }: Props) {
   return (
     <>
-    
-      <Card borderRadius={15} overflow="hidden">
+      <Card width='230px' borderRadius={15} overflow="hidden">
         <Image src={game.background_image} />
         <CardBody>
           <Heading fontSize="2xl">{game.name}</Heading>
-          <PlatformIconList platforms={game.parent_platforms.map(p => p.platform)}/>
+          <PlatformIconList
+            platforms={game.parent_platforms.map((p) => p.platform)}
+          />
         </CardBody>
       </Card>
     </>
