@@ -11,7 +11,7 @@ interface Props {
 
 export default function GameGrid({ selectedGenre }: Props) {
   const { data, error, isLoading } = useGames(selectedGenre);
-  const Skeletons = [1, 2, 3, 4, 5, 6];
+  const Skeletons = [1, 2, 3, 4, 5];
 
   return (
     <>
